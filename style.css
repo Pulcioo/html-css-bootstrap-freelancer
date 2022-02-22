@@ -21,8 +21,8 @@
     width: 10%;
 }
 
-.text_align_center{
-    text-align: center;
+.debug_form{
+    border-bottom: 1px solid gray;
 }
 
 .black{
@@ -69,3 +69,17 @@
 }
 
 /* quarta sezione */
+input,
+textarea{
+    border: 0;
+}
+
+span{
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn-primary{
+    background-color: rgb(16, 177, 123);
+    border: rgb(16, 177, 123);
+}
