@@ -8,11 +8,43 @@
     display: flex;
 }
 
-/* header */
+.direction{
+    flex-direction: column;
+}
+
 .bg_dark{
     background-color: rgb(56, 55, 55);
 }
 
-h1{
-    font-size: 1.6rem;
+.debug{
+    border-bottom: 3px solid white;
+    width: 10%;
 }
+
+.text_align_center{
+    text-align: center;
+}
+
+/* header */
+.logo{
+    font-size: 1.6rem;
+    margin: revert;
+}
+
+/* main */
+.bg_aquamarine{
+    background-color: aquamarine;
+}
+
+.avatar{
+    width: 250px;
+}
+
+#title{
+    font-size: 3.5rem;
+}
+
+.star{
+    margin: 0 20px;
+}
+
