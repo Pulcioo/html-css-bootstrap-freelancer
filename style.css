@@ -3,6 +3,10 @@
     color: white;
 }
 
+h2{
+    font-size: 2.5rem;
+}
+
 /* utility */
 .flex{
     display: flex;
@@ -13,7 +17,11 @@
 }
 
 .bg_dark{
-    background-color: rgb(56, 55, 55);
+    background-color: rgb(43, 38, 61);
+}
+
+.bg_dark_grey{
+    background-color: rgb(62, 59, 80);
 }
 
 .debug{
@@ -82,4 +90,11 @@ span{
 .btn-primary{
     background-color: rgb(16, 177, 123);
     border: rgb(16, 177, 123);
+}
+
+/* footer */
+/* footer-bottom */
+.footer_bottom p{
+    font-size: small;
+    margin: revert;
 }
