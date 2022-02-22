@@ -17,12 +17,20 @@
 }
 
 .debug{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid;
     width: 10%;
 }
 
 .text_align_center{
     text-align: center;
+}
+
+.black{
+    color: black;
+}
+
+.padding{
+    padding: 50px;
 }
 
 /* header */
@@ -32,6 +40,7 @@
 }
 
 /* main */
+/* prima sezione */
 .bg_aquamarine{
     background-color: aquamarine;
 }
@@ -48,3 +57,7 @@
     margin: 0 20px;
 }
 
+/* prima sezione */
+.portfolio_img{
+    width: 100%
+}
