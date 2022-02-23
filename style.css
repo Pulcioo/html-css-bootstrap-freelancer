@@ -1,11 +1,13 @@
 /****** GENERICS ******/
 *{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h2{
-    font-size: 2.5rem;
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /****** UTILITY ******/
@@ -43,7 +45,7 @@ h2{
 }
 
 .padding_50{
-    padding: 50px;
+    padding: 50px 0;
 }
 
 /****** HEADER ******/
@@ -52,12 +54,13 @@ h2{
     margin: revert;
 }
 
-#hamburger_menu{
-    display: none;
-}
-
 #menu{
     font-size: 0.8rem;
+    line-height: 50px;
+}
+
+#menu>span{
+    margin: 0 5px;
 }
 
 /****** MAIN ******/
@@ -71,7 +74,7 @@ h2{
 }
 
 #title{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .star{
@@ -81,6 +84,7 @@ h2{
 /* section-portfolio */
 .portfolio_img{
     width: 100%;
+    border-radius: 5%;
 }
 
 /* section-about */
@@ -90,19 +94,22 @@ h2{
 }
 
 /* section-contact */
-input,
-textarea{
+.form-group{
+    width: 100%;
+}
+
+.form-control{
     border: 0;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    margin: 0 auto;
 }
 
-section span{
-    display: inline-block;
-    margin: 5px;
-}
-
-.btn-primary{
+.btn-success {
+    color: #fff;
     background-color: rgb(16, 177, 123);
-    border: rgb(16, 177, 123);
+    border-color: rgb(16, 177, 123);
+    margin: 0 auto;
 }
 
 /****** FOOTER ******/
@@ -121,21 +128,4 @@ section span{
 .footer_bottom p{
     font-size: small;
     margin: revert;
-}
-
-
-/****** MEDIA-QUERIES header ******/
-
-@media screen and (max-width: 768px){
-
-    header .row #hamburger_menu{
-        display: block;
-    }
-}
-
-@media screen and (max-width: 768px){
-
-    header .row #menu{
-        display: none;
-    }
 }

@@ -27,12 +27,12 @@
                     <h1 class="logo">START BOOTSTRAP</h1>
                 </div>
                 <!-- header right -->
-                <div id="menu" class="col offset-3 flex justify-content-around align-items-center">
+                <div id="menu" class="col offset-3 d-none d-md-block text-end">
                     <span>PORTFOLIO</span>
                     <span>ABOUT</span>
                     <span>CONTACT</span>
                 </div>
-                <div id="hamburger_menu" class="col align-self-center text-end">
+                <div class="col align-self-center text-end d-md-none d-lg-none">
                     <span><i class="fa-solid fa-bars"></i></span>
                 </div>
             </div>
@@ -41,7 +41,7 @@
     <main>
         <!-- section-profile -->
         <section class="bg_aquamarine padding_50">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row direction">
                     <div class="col text-center">
                         <img class="avatar" src="img/avatar.svg" alt="avatar">
@@ -143,31 +143,26 @@
                         <div class="debug align-self-center black"></div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-8 offset-2 debug_form">
-                        <span class="black">Name<input type="text"></span>
+                <form class="flex direction">
+                    <div class="form-group">
+                        <label for="FormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="FormControlInput1" placeholder="Name">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-8 offset-2 debug_form">
-                        <span class="black">Email Adress</span><input type="email">
+                    <div class="form-group">
+                        <label for="FormControlInput2">Email Address</label>
+                        <input type="email" class="form-control" id="FormControlInput2" placeholder="E-mail address">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-8 offset-2 debug_form">
-                        <span class="black">Phone Number</span><input type="text">
+                    <div class="form-group">
+                        <label for="FormControlInput3">Phone Number</label>
+                        <input type="number" class="form-control" id="FormControlInput3" placeholder="Phone Number">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-8 offset-2 debug_form">
-                        <span class="black align-top">Message</span><textarea name="#" rows="8" cols="100"></textarea>
+                    <div class="form-group">
+                        <label for="FormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="8" placeholder="Message">
+                        </textarea>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-8 offset-2 p-2">
-                        <button type="button" class="btn btn-primary">Send</button>
-                    </div>
-                </div>
+                    <button type="button" class="btn btn-success">Send</button>
+                </form>
             </div>
         </section>
     </main>
@@ -177,16 +172,16 @@
         <div class="footer_top bg_dark_grey">
             <div class="container">
                 <div class="row justify-content-center p-5">
-                    <div class="col-lg-4 col-md-4 text-center p-3">
+                    <div class="col-lg-4 col-md-4 text-center p-2">
                         <h5>LOCATION</h5>
                         <p>2215 Jhon Daniel Drive Clarck, MO 54243</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 text-center p-3">
+                    <div class="col-lg-4 col-md-4 text-center p-2">
                         <h5>AROUND THE WEB</h5>
                         <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-google-plus-g"></i><i
                             class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin-in"></i>
                     </div>
-                    <div class="col-lg-4 col-md-4 text-center p-3">
+                    <div class="col-lg-4 col-md-4 text-center p-2">
                         <h5>ABOUT FREELANCER</h5>
                         <p>
                             Freelance is a free to use, open source Bootstrap theme created by
